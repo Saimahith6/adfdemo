@@ -1,0 +1,60 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "covidinfo22"
+		},
+		"ls_ablob_covid19reportingsa1000_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covid19reportingdl1000_accountKey": {
+			"value": ""
+		},
+		"ls_blobdl_poptsv_accountKey": {
+			"value": ""
+		},
+		"ls_blobsa_popgz_connectionString": {
+			"value": ""
+		},
+		"ls_db_covid_cluster_accessToken": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_clusterPassword": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_clusterSshPassword": {
+			"value": ""
+		},
+		"ls_hdi_covid_cluster_servicePrincipalKey": {
+			"value": ""
+		},
+		"ls_sql_covid_db_connectionString": {
+			"value": ""
+		},
+		"ls_adls_covid19reportingdl1000_properties_typeProperties_url": {
+			"value": "https://covid19reportingdl1000.dfs.core.windows.net/"
+		},
+		"ls_blobdl_poptsv_properties_typeProperties_url": {
+			"value": "https://covid19dl22.dfs.core.windows.net/"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_hostSubscriptionId": {
+			"value": "0a8552d0-8c53-4fbd-bc26-c85a9ca5c0fc"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_clusterResourceGroup": {
+			"value": "covid-19-reporting-rg"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_servicePrincipalId": {
+			"value": "03d6b9f9-904f-424c-8c97-c041b39a5497"
+		},
+		"ls_hdi_covid_cluster_properties_typeProperties_tenant": {
+			"value": "7c0c36f5-af83-4c24-8844-9962e0163719"
+		},
+		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"tr_population_data_arrived_properties_typeProperties_scope": {
+			"value": "/subscriptions/0a8552d0-8c53-4fbd-bc26-c85a9ca5c0fc/resourceGroups/covid-19-reporting-rg/providers/Microsoft.Storage/storageAccounts/covid19reportingsa1000"
+		}
+	}
+}

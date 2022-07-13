@@ -340,7 +340,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "ls_ablob_covid19reportingsa1000",
+					"referenceName": "ls_blobsa_popgz",
 					"type": "LinkedServiceReference"
 				},
 				"folder": {
@@ -368,7 +368,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ls_ablob_covid19reportingsa1000')]"
+				"[concat(variables('factoryId'), '/linkedServices/ls_blobsa_popgz')]"
 			]
 		},
 		{
@@ -377,7 +377,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "ls_adls_covid19reportingdl1000",
+					"referenceName": "ls_blobdl_poptsv",
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
@@ -408,7 +408,7 @@
 				"schema": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ls_adls_covid19reportingdl1000')]"
+				"[concat(variables('factoryId'), '/linkedServices/ls_blobdl_poptsv')]"
 			]
 		},
 		{

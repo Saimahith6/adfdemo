@@ -2,7 +2,7 @@
 	"name": "ds_population_raw_tsv",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_adls_covid19reportingdl1000",
+			"referenceName": "ls_blobdl_poptsv",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
@@ -14,8 +14,8 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "population_by_age.tsv",
-				"folderPath": "population",
-				"fileSystem": "raw"
+				"folderPath": "populationdfsa",
+				"fileSystem": "rawdata"
 			},
 			"columnDelimiter": "\t",
 			"escapeChar": "\\",

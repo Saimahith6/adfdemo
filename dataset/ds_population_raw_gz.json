@@ -2,7 +2,7 @@
 	"name": "ds_population_raw_gz",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_ablob_covid19reportingsa1000",
+			"referenceName": "ls_blobsa_popgz",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {

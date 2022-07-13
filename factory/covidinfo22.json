@@ -1,0 +1,9 @@
+{
+	"name": "covidinfo22",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dd130f9a-313a-4d4a-a11c-489701cc4161",
+		"tenantId": "7c0c36f5-af83-4c24-8844-9962e0163719"
+	}
+}

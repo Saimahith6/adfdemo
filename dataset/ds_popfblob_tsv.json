@@ -1,0 +1,25 @@
+{
+	"name": "ds_popfblob_tsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blobdl_poptsv",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "population_by_age.tsv",
+				"folderPath": "populationdfsa",
+				"fileSystem": "rawdata"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
